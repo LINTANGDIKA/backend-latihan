@@ -7,69 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Penjelasan Kode : 
 
 
-
-
-Penjelasan Kode : 
-
-
-Membuat API CRUD (Create, Read, Update, Delete)
+Membuat API CRUD (Create, Read, Update, Delete) dengan database
 
 
 Create => membuat data anak melibatkan (inisialNama, nama, umur, beratBadan, tinggiBadan, jenisKelamin),
@@ -79,7 +21,36 @@ Delete => menghapus data dengan id
 
 membuat API Login dan Register dengan middleware Sanctum
 
-untuk bisa mengakses CRUD anak dia atas diharuskan login atau register terlebih dahulu
+untuk bisa mengakses CRUD anak dia atas diharuskan login atau register terlebih dahulu jika tidak akan terjadi seperti gambar :
+![nologin](https://user-images.githubusercontent.com/77370938/136696738-2fb5b5df-186d-4305-b21c-5968fa0fb66d.png)
+
+## API Login :
+![login](https://user-images.githubusercontent.com/77370938/136696994-f3a4c6af-416e-478d-92cc-29c6f0c346a5.png)
+
+## API Register :
+![register](https://user-images.githubusercontent.com/77370938/136697364-697ac779-5211-415b-9c92-56b0b76612b9.png)
+
+## dari 2 api di atas masing masing mengembalikan token, token ini berfungsi agar kita bisa membuat CRUD anak dan didapatkan saat login dan register
+
+## API Logout :
+![logout](https://user-images.githubusercontent.com/77370938/136697117-f8f9b8e2-38d4-4366-8a51-88a1718f3f9c.png)
+
+## API CRUD
+
+## API Create :
+![create](https://user-images.githubusercontent.com/77370938/136697182-0e425992-e8a7-483c-8769-6588cbef46ee.png)
+
+## API Read : 
+ALL : 
+![read](https://user-images.githubusercontent.com/77370938/136697376-a39154fb-d73a-4bed-b5d1-72e1c39c22de.png)
+by inisial nama :
+![by](https://user-images.githubusercontent.com/77370938/136697417-ff1d4497-836c-49d6-874e-ed1626a65b0b.png)
+
+## API Update :
+![update](https://user-images.githubusercontent.com/77370938/136697458-36eb1042-9b55-4de3-a5d4-81af49471867.png)
+
+## API Delete :
+![delete](https://user-images.githubusercontent.com/77370938/136697485-641e335c-5a19-47f4-88a0-462e517676dc.png)
 
 
 

@@ -22,7 +22,7 @@ class AuthController extends Controller
         $user = User::create($data);
         $token = $user->createToken('registertoken')->plainTextToken;
         $response = [
-            'messages' => 'Register Berhasil Gan!',
+            'messages' => 'Register Berhasil !',
             'user' => $user,
             'token' => $token
         ];
@@ -39,14 +39,13 @@ class AuthController extends Controller
         $token = $checkEmail->createToken('logintoken')->plainTextToken;
         if (!$checkEmail || !$checkPassword) {
             $response = [
-                'messages' => ' Password Anda Salah atau Email Anda Ga Ada Gan!',
-                'password' => $data['email']
+                'messages' => ' Password Anda Salah atau Email Anda Ga Ada Gan!'
             ];
 
             return response($response, 404);
         } else {
             $response = [
-                'messages' => 'Anda Berhasil Login Gan!',
+                'messages' => 'Anda Berhasil Login!',
                 'token' => $token
             ];
 

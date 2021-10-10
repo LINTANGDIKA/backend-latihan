@@ -15,8 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/anak', [AnakController::class, 'index']);
-Route::get('/anak/{anak:inisialNama}', [AnakController::class, 'show']);
-Route::post('/anak', [AnakController::class, 'store']);
-Route::post('/anak/edit/{anak:inisialNama}', [AnakController::class, 'update']);
-Route::post('/anak/delete/{id}', [AnakController::class, 'destroy']);
+
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+    Route::get('/anak', [AnakController::class, 'index']);
+    Route::get('/anak/{anak:inisialNama}', [AnakController::class, 'show']);
+    Route::post('/anak', [AnakController::class, 'store']);
+    Route::post('/anak/edit/{anak:inisialNama}', [AnakController::class, 'update']);
+    Route::post('/anak/delete/{id}', [AnakController::class, 'destroy']);
+    Route::post('/logout', [AuthController::class, 'logout']);
+});

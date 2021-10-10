@@ -49,11 +49,10 @@ class AnakController extends Controller
             'jenisKelamin' => 'required'
         ]);
         anak::create($data);
-        $search = $data['inisialNama'];
         $response = [
             'status' => 'success',
             'messages' => 'Data Anak Berhasil Masuk',
-            'data' => anak::find($search)
+            'data' => anak::all()
         ];
         return response($response, 201);
     }

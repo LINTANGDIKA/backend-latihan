@@ -62,3 +62,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+Penjelasan Kode : 
+
+
+Membuat API CRUD (Create, Read, Update, Delete)
+
+
+Create => membuat data anak melibatkan (inisialNama, nama, umur, beratBadan, tinggiBadan, jenisKelamin),
+Read => menampilkan semua data anak dan juga bisa menampilkan dengan pencarian inisialNama,
+Update => mengupdate data yang baru dengan menggunakan inisialNama untuk pencarian data,
+Delete => menghapus data dengan id
+
+membuat API Login dan Register dengan middleware Sanctum
+
+untuk bisa mengakses CRUD anak dia atas diharuskan login atau register terlebih dahulu
+
+
+
+
+
+
